@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -24,20 +24,17 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="2be7cd5a-0a7b-40f9-bcef-8b2763313d32">
-        <schema name="information_schema" object-types="table, view, procedure, function" />
-        <schema name="mysql" object-types="table, view, procedure, function" />
-        <schema name="performance_schema" object-types="table, view, procedure, function" />
-        <schema name="sakila" object-types="table, view, procedure, function" />
-        <schema name="sys" object-types="table, view, procedure, function, constraint, index, column, dataset trigger" />
-        <schema name="world" object-types="table, view, procedure, function" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="2be7cd5a-0a7b-40f9-bcef-8b2763313d32">
-      <console name="Student Connector" type="STANDARD" schema="mysql" session="Main" />
+      <console name="Student Connector" type="STANDARD" schema="mysql" session="Main"><![CDATA[select * from sys.studentdata where stu_id ='xyz';
+
+
+
+delete from sys.studentdata;
+
+commit;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
